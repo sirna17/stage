@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=IBM+Plex+Sans:wght@300;400&family=Montserrat:wght@300;400&family=Open+Sans:ital,wght@1,300&family=Pacifico&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+
+body {
+    margin: 0;
+} 
+
+
+/* Début des propriétés CSS du header */
+header {
+    padding:0  20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    border-bottom:5px #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: #131A22;
+}
+
+header span.orange {
+    background-color: #FBBC6A;
+    color: #131A22;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #131A22;
+}
+
+header nav ul li a:hover {
+    background-color: #FBBC6A;
+    transition: 0.5s;
+}
+#header_burger{
+    display: none;
+}
+#header_burger svg{
+    stroke: #222;
+    width: 22px;
+    height: 22px;
+}
+
+
+
+
+/* Fin des propriétés CSS du header */
+
+/*début des propriétés CSS du main*/
+main section:first-child {
+    width: 90%;
+    margin: auto;
+    /* margin-bottom: 50px; */
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid red;
+}
+.separator {
+    background-color: grey;
+    margin: 0 auto ;
+    height: 2px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.thumbs {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+.thumbs img {
+    border-radius: 15px;
+    padding: 9px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.big {
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.big img {
+    max-width: 90%;
+    min-width: 600px;
+    cursor: pointer;
+}
+
+.details {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.details h1 {
+    margin-top: 0;
+}
+
+.star {
+    color: #FBBC6A;
+}
+.details h2 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.details h3 {
+    font-size: 25px;
+}
+.details span {
+    font-weight: bold;
+    color: #111;
+}
+.details .button {
+    width: 350px;
+    height: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #131A22;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.details .button {
+    background-color: #FBBC6A;
+    transition: 0.5s;
+}
+.details .button .fa-amazon {
+    color:  #181818;
+    font-size: 1.8rem;
+    position: relative;
+    top: 3px;
+}
+
+.details .button a {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #181818;
+    font-size: 1.5rem;
+}
+
+
+
+.advantage {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'montserrat';
+}
+.advantage p {
+    margin-left: 40px; 
+}
+
+
+
+
+/*Fin des propriétés CSS du container principal*/
+/* Début des propriétés CSS du footer */
+footer {
+    padding: 20px;
+    background-color: #131A22;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+}
+footer ul li span {
+    color: #fff;
+    margin: 4px;
+}
+
+footer ul li a span.orange {
+    background-color: #FBBC6A;
+    color: #131A22;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ 
+
+/* Fin des propriétés CSS du footer */
+
+
+
+
+@media screen and (max-width: 960px) {
+    header{
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumbs{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .thumbs img{
+        width: 60px;
+    }
+
+    .big{
+        width: 100%;
+        min-width: 300px;
+        margin: auto;
+        order: 0;
+    }
+
+    .big img{
+        width: 80%;
+        min-width: 300px;
+    }
+
+    .details{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        order: 3;
+        border: 1px solid red;
+    }
+    .details h1 {
+        align-items: center;
+    }
+    footer ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+     footer ul li a {
+        width: 300px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .details h1 {
+        font-size: 1.2rem;
+    }
+    .details h2,h3,span {
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+
+    .advantage {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    .list {
+        margin: 0;
+    }
+    footer {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
